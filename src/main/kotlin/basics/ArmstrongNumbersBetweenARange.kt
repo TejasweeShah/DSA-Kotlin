@@ -12,7 +12,12 @@ import kotlin.math.pow
  */
 
 fun main() {
-    val number = 371
+    val low = 999
+    val high = 99999
+
+
+    for(number in low..high){
+
     var remainder : Int
     var result = 0
     var digits = 0
@@ -35,6 +40,5 @@ fun main() {
     }
     if (result == number)
         println("$number is an Armstrong number.")
-    else
-        println("$number is NOT an Armstrong number.")
+    }
 }
